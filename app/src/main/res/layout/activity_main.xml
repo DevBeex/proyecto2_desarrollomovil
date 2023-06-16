@@ -4,38 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#51d1f6"
+
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mainTV"
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.project2_fragments.first_fragment"
+        android:layout_width="403dp"
+        android:layout_height="401dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.094" />
+        tools:layout="@layout/fragment_first_fragment" />
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/nameFragment"
         android:name="com.example.project2_fragments.name_fragment"
-        android:layout_width="336dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/lastnameFragment"
+        android:layout_width="337dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout="@layout/fragment_name_fragment" />
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/lastnameFragment"
         android:name="com.example.project2_fragments.lastname_fragment"
         android:layout_width="336dp"
         android:layout_height="125dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout="@layout/fragment_lastname_fragment" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

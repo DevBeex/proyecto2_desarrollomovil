@@ -2,7 +2,11 @@
     <string name="app_name">Project2_Fragments</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="namefragment">Aqui va el nombre</string>
-    <string name="lastnamefragment">aqui va el apellido</string>
-    <string name="mainTV">Esto es el titulo del Proyecto 2</string>
+    <string name="namefragment">Nombre</string>
+    <string name="lastnamefragment">Apellido</string>
+    <string name="mainTV">¡BIENVENIDO A NUESTRO PROGRAMA!</string>
+    <string name="name">Ingrese nombre</string>
+    <string name="lastname">Ingrese apellido</string>
+    <string name="btn2">Limpiar</string>
+    <string name="btn1">Enviar</string>
 </resources>
